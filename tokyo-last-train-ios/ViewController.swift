@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-                            
+    
+    @IBOutlet var fromTextField: UITextField!
+    @IBOutlet var   toTextField: UITextField!
+    
+    @IBOutlet var testTextField: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +23,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    @IBAction func fromChanged(sender: AnyObject) {
+        
+    }
+    
+    @IBAction func toChanged(sender: AnyObject) {
+    }
 }
 
