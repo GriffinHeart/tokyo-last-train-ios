@@ -24,15 +24,22 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func fromChanged(sender: AnyObject) {
+    @IBAction
+    func fromChanged(sender: AnyObject) {
         // when writing
     }
     
-    @IBAction func toChanged(sender: AnyObject) {
+    @IBAction
+    func toChanged(sender: AnyObject) {
         // when writing
     }
     
-    @IBAction func searchPressed(sender: AnyObject) {
+    @IBAction
+    func searchPressed(sender: AnyObject) {
+        search()
+    }
+    
+    func search() {
         // Do search
         let search = Search(from: fromTextField.text, to: toTextField.text)
         search.perform()
