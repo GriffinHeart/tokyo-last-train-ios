@@ -42,6 +42,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="128" y="199" width="48" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NCl-b0-w7Z"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Plt-Bt-d3G">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
@@ -51,7 +54,7 @@
                                     <rect key="frame" x="104" y="105" width="97" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="fromChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="vQ2-Yd-TCT"/>
+                                    <action selector="fromChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="JWQ-kO-Ehe"/>
                                     <outlet property="delegate" destination="8bC-Xf-vdC" id="VPs-TB-H4h"/>
                                 </connections>
                             </textField>
@@ -66,35 +69,35 @@
                                     <action selector="toChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="lnd-cf-wgo"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3K-dV-NjK">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The results" translatesAutoresizingMaskIntoConstraints="NO" id="xDo-zU-tqc">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="104" y="264" width="42" height="21"/>
+                                    <rect key="frame" x="14" y="253" width="240" height="128"/>
                                 </variation>
-                            </label>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Plt-Bt-d3G"/>
                                 <exclude reference="a6i-XV-hWm"/>
-                                <exclude reference="M3K-dV-NjK"/>
+                                <exclude reference="xDo-zU-tqc"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Plt-Bt-d3G"/>
                                 <include reference="a6i-XV-hWm"/>
-                                <include reference="M3K-dV-NjK"/>
+                                <include reference="xDo-zU-tqc"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="fromTextField" destination="Plt-Bt-d3G" id="Lvx-Tr-7ue"/>
-                        <outlet property="testTextField" destination="M3K-dV-NjK" id="ge4-Ce-8Ka"/>
+                        <outlet property="resultsTextView" destination="xDo-zU-tqc" id="16A-Nw-CwI"/>
                         <outlet property="toTextField" destination="a6i-XV-hWm" id="IAo-L6-t2g"/>
                     </connections>
                 </viewController>
