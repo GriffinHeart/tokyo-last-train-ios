@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		708ADA3742A94646B6E6D7A1 /* libPods-tokyo-last-train-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7670AD614F84357BC981420 /* libPods-tokyo-last-train-ios.a */; };
 		8576A61E198FA4BA007D9E83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8576A61D198FA4BA007D9E83 /* AppDelegate.swift */; };
 		8576A620198FA4BA007D9E83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8576A61F198FA4BA007D9E83 /* ViewController.swift */; };
 		8576A623198FA4BA007D9E83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8576A621198FA4BA007D9E83 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6541C7A3627B48F5AFBB4690 /* Pods-tokyo-last-train-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tokyo-last-train-ios.xcconfig"; path = "Pods/Pods-tokyo-last-train-ios.xcconfig"; sourceTree = "<group>"; };
 		8576A618198FA4BA007D9E83 /* tokyo-last-train-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tokyo-last-train-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8576A61C198FA4BA007D9E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8576A61D198FA4BA007D9E83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		8576A62A198FA4BA007D9E83 /* tokyo-last-train-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tokyo-last-train-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8576A62F198FA4BA007D9E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8576A630198FA4BA007D9E83 /* tokyo_last_train_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tokyo_last_train_iosTests.swift; sourceTree = "<group>"; };
+		857A5C3E19A219AA00F76530 /* bridging-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bridging-header.h"; sourceTree = "<group>"; };
+		E7670AD614F84357BC981420 /* libPods-tokyo-last-train-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tokyo-last-train-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708ADA3742A94646B6E6D7A1 /* libPods-tokyo-last-train-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +65,8 @@
 				8576A61A198FA4BA007D9E83 /* tokyo-last-train-ios */,
 				8576A62D198FA4BA007D9E83 /* tokyo-last-train-iosTests */,
 				8576A619198FA4BA007D9E83 /* Products */,
+				6541C7A3627B48F5AFBB4690 /* Pods-tokyo-last-train-ios.xcconfig */,
+				EE2AB5D681F94B2D871CB7D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +87,7 @@
 				8576A621198FA4BA007D9E83 /* Main.storyboard */,
 				8576A624198FA4BA007D9E83 /* Images.xcassets */,
 				8576A61B198FA4BA007D9E83 /* Supporting Files */,
+				857A5C3E19A219AA00F76530 /* bridging-header.h */,
 			);
 			path = "tokyo-last-train-ios";
 			sourceTree = "<group>";
@@ -109,6 +117,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EE2AB5D681F94B2D871CB7D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7670AD614F84357BC981420 /* libPods-tokyo-last-train-ios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8576A634198FA4BA007D9E83 /* Build configuration list for PBXNativeTarget "tokyo-last-train-ios" */;
 			buildPhases = (
+				F0FFCECF30B74D45909B074C /* Check Pods Manifest.lock */,
 				8576A614198FA4BA007D9E83 /* Sources */,
 				8576A615198FA4BA007D9E83 /* Frameworks */,
 				8576A616198FA4BA007D9E83 /* Resources */,
+				2BBB889881AC4503A18720CA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +220,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BBB889881AC4503A18720CA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-tokyo-last-train-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0FFCECF30B74D45909B074C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8576A614198FA4BA007D9E83 /* Sources */ = {
@@ -324,23 +375,29 @@
 		};
 		8576A635198FA4BA007D9E83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6541C7A3627B48F5AFBB4690 /* Pods-tokyo-last-train-ios.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "tokyo-last-train-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tokyo-last-train-ios/bridging-header.h";
 			};
 			name = Debug;
 		};
 		8576A636198FA4BA007D9E83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6541C7A3627B48F5AFBB4690 /* Pods-tokyo-last-train-ios.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "tokyo-last-train-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tokyo-last-train-ios/bridging-header.h";
 			};
 			name = Release;
 		};
@@ -397,6 +454,7 @@
 				8576A636198FA4BA007D9E83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8576A637198FA4BA007D9E83 /* Build configuration list for PBXNativeTarget "tokyo-last-train-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +463,7 @@
 				8576A639198FA4BA007D9E83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
